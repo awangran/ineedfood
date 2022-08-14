@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Oasis</title>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+       <article>
+    <nav class="sticky">
+      <div>
+        <ul>
+          <li><a href="index.html"><span 
+class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a></li>
+          <li><a href="addRecipes.html"><span class="emoji">&#128213</span>Recipes</a></li>
+          <li><a href="donate.html"><span class="emoji">&#128140</span>Donate</a></li>
+          <li><a href="volunteer.html"><span class="emoji">&#9995</span>Volunteer</a></li>
+          <li><a href="resources.html"><span class="emoji">&#129668</span>Resources</a></li>
+        </ul>
+      </div>
+    </nav>
+         
+	<header style="background-image: url('https://cdn.ottawamagazine.com/wp-content/uploads/2018/04/fooddesertbanner.jpg'); ">
+    
+		<div class="upper-header">
+			<div class="mini-title">issue
+</div>
+			<div class="date-since">
+<!-- 				<p><span class="date-value" id="sinceData"></span></p> -->
+<!-- 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #fff;
+								opacity: .5;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M15,0C6.75,0,0,6.75,0,15s6.75,15,15,15,15-6.75,15-15S23.25,0,15,0Zm7.35,16.65h-7.35c-.83,0-1.5-.67-1.5-1.5V7.8c0-.9,.6-1.5,1.5-1.5s1.5,.6,1.5,1.5v5.85h5.85c.9,0,1.5,.6,1.5,1.5s-.6,1.5-1.5,1.5Z" />
+				</svg> -->
+
+			</div>
+		</div>
+    
+    
+    
+		<div class="lower-header">
+			<div class="tags-container">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #fff;
+								opacity: .75;
+							}
+						</style>
+					</defs>
+					<
+				</svg>
+				<!-- <span>Social Good</span><span>Food Wastage</span><span>Non-Profit</span>-->
+			</div>
+			<h1 class="title">Food Oasis</h1>
+      
+			<p class="subtitle">Reviving food desert communities in need.</p>
+		</div>
+	</header>
+ 
+         
+  <!-- <div class="section2">
+    <a href="/addRecipes.html">
+      <span class="recipe"></span></a>
+    <a href="/volunteer.html"> 
+    <span class="volunteer"></span>
+  </a>
+  </div> -->
+         
+	<section class="summary">
+		<div class="summary-item" id="item-1">
+			<h5 class="item-title">In a Food Desert?</h5>
+			<p class="item-text"><span class="item-data" id="ip">Yes</p>
+		</div>
+		<div class="summary-item" id="item-2">
+			<h5 class="item-title">Location</h5>
+			<p class="item-text"><span class="item-data">Houston, USA</p>
+		</div>
+		<div class="summary-item" id="item-3">
+			<h5 class="item-title">Map</h5>
+			<p class="item-text"><span class="item-data">
+<!--         <img src="map.png" style="width:400px;height:400*(16/9)px"> -->
+<!--       <form id="options">
+      <label for="width">Width</label>
+      <input type="number" name="width" value="500" />
+
+      <label for="height">Height</label>
+      <input type="number" name="height" value="500" />
+      <button id="resize">Resize</button>
+    </form> -->
+<!--     <br/> -->
+    <center><div id="map"></div></center>
+    
+      </span></p>
+		</div>
+
+	</section>
+  <div class="logo">
+    <img src="images/logo.jpeg" style="width: 200px;">
+  </div>
+  <section class="main-article">
+    <div class="article-text-1">
+		<h3  id="h3-title" style="display: inline; color: white; font-size: 100px; background: #FBDA8D;">39.5 Million people </h3> <br><h4 style="display: inline; bold: false; color: #C58907;"> in the United States alone live in food deserts. Some may not even realize it. Other people might have extra food they don’t know how to use, or wish to help those who are less fortunate. Food Oasis gives everyone a place to start. </h4>
+		
+		<p>Born out of the desire to help those who struggle to find quality food, Food Oasis' mission is to empower people living within food deserts to learn about options available to them. We also aim to provide volunteer and donation opportunities in order to help levy the burden faced by those living in food deserts. </p>
+    </div>
+		<div class="gallery">
+      <img src="images/img1.jpg" width="400">
+      <img src="images/img2.jpg" width="400">
+      <img src="images/img3.jpg" width="400">
+    </div>
+	
+	</section>    
+  <footer class="flex-wrapper" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4> Food Oasis </h4>
+          <ul>
+            <li><a href="#">About us</a></li><br>
+            <li><a href="#">Services</a></li><br>
+            <li><a href="#">Policies</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4> Help </h4>
+          <ul>
+            <li><a href="#">FAQ</a></li><br>
+            <li><a href="#">Donations</a></li><br>
+  
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4> Resources </h4>
+          <ul>
+            <li><a href="#">Articles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4> Contact Us </h4>
+          <ul>
+            <li><a href="#">Email</a></li>
+          
+          </ul>
+        </div>
+      </div>
+      <p>Crafted with ❤️ <a href="https://katy-youth-hacks.devpost.com">KatyYouthHacks Hackathon'22</a></p>
+
+    </div>
+  </footer>
+</article> 
+</body>
+
+
+
+
+    
+               
+<script src = "ip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+
+  
+<script>
+const galleryMask = document.querySelector(".gallery-mask");
+const maskImage = document.querySelector(".mask-image");
+const galleryImgs = document.querySelectorAll(".image-item");
+
+galleryMask.addEventListener("click", () => {
+	galleryMask.classList.add("mask-off");
+});
+
+galleryImgs.forEach((item) => {
+	item.addEventListener("click", () => {
+		let styleValue = item.getAttribute("style");
+		maskImage.setAttribute(
+			"src",
+			styleValue.slice(styleValue.indexOf(": url(") + 7, -3)
+		);
+		galleryMask.classList.remove("mask-off");
+	});
+});
+
+// Handle Publish Date
+// const dateData = document.getElementById("dateData");
+// const sinceData = document.getElementById("sinceData");
+// let publishDate = "2022-04-26";
+
+// dateData.innerHTML = moment(publishDate).format("LL");
+// sinceData.innerHTML = moment(publishDate).fromNow();
+</script>
+
+
+  <script src="map.js"></script>
+</script>
+</html>
+

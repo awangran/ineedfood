@@ -1,0 +1,70 @@
+/* nav css */
+nav {
+  z-index: 9;
+  position: sticky;
+  padding: 5px;
+  margin-left: 0%;
+  margin-right: 0%;
+  justify-content: center;
+  margin-top: -10px;
+  float: none;
+  vertical-align: top;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+li {
+  display: inline-block;
+}
+
+nav li a {
+  padding: 1em;
+  margin: 0px 30px 0px;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: #FBDA90;
+}
+
+a:hover {
+  color: #C58907;
+  transition: 0.3s;
+}
+
+.sticky{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  background: white;
+}
+
+.emoji{
+  font-size: 30px;
+  padding: 10px;
+}
+
+#content{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#content .card{
+  margin: 10px;
+}
+
+#mamamia {
+  text-align: center;
+}

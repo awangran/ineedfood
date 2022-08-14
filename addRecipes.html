@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recipes</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="others.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="recipe.js" defer></script>
+
+
+</head>
+
+<body>
+
+  <style>
+    h1 {
+      margin-top: 50px;
+      
+      text-align: center;
+
+    }
+
+    .input-group {
+      margin-top: 50px;
+      
+      margin-bottom: 50px;
+    }
+
+    .card {
+      display: inline-block;
+      
+      margin-bottom: 50px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: smaller;
+    }
+
+    .navbar-brand {
+      font-family: "Lucida Console", Monaco, monospace;
+      
+    }
+    /*
+    .home{
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      display: inline-flex;
+      width: 180px;
+      height: 55px;
+      margin: 0 15px;
+      perspective: 1000px;
+      
+    }
+    .home{
+      font-size: 19px;
+      letter-spacing: 1px;
+      transform-style: preserve-3d;
+      transform: translateZ(-25px);
+      transition: transform .25s;
+      font-family: 'Montserrat', sans-serif;
+      
+    }
+    .home:before,
+    .home:after{
+      position: absolute;
+      content: "Home";
+      height: 55px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid black;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+.home:before{
+  color: #fff;
+  background: #FBDA90;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.home:after{
+  color: #000;
+  background: #FBDA90;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.home:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+    */
+  </style>
+
+<header>
+  <nav class="sticky">
+      <div>
+        <ul>
+          <li><a href="index.html"><span class="emoji">&#127968</span>Home</a></li>
+          <li><a href="addRecipes.html"><span class="emoji">&#128213</span>Recipes</a></li>
+          <li><a href="donate.html"><span class="emoji">&#128140</span>Donate</a></li>
+          <li><a href="volunteer.html"><span class="emoji">&#9995</span>Volunteer</a></li>
+          <li><a href="resources.html"><span class="emoji">&#129668</span>Resources</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+  <h1 class="text-lg"> Ma-ma-mia! </h1>
+  <h4 id="mamamia">Don't let your food go to waste. Type any food that is about to go bad and we will give you a recipe.</h3>
+  <a href="/index.html"> 
+    <span class="home"> </span>
+  </a>
+  <div class="input-group col-8 offset-2">
+    <input type="text" class="form-control" placeholder="Search for a Food Recipe" id="search"
+      aria-label="Recipient's username" aria-describedby="button-addon2">
+    <div class="input-group-append">
+      <button class=" btn btn-dark" type="button" onclick="sendApiRequest()">Search</button>
+    </div>
+  </div>
+
+  <div id="content"> 
+  </div>
+
+  <footer>
+    <p>Crafted with ❤️ <a href="https://katy-youth-hacks.devpost.com">KatyYouthHacks Hackathon'22</a></p>
+  </footer>
+</body>
+
+</html>
