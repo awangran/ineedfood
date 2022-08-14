@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="others.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <title>Resources</title>
 </head>
-<body>
-  <h1>Resources</h1>
-  <a href="/index.html"> 
-    <span class="home"> </span>
-  </a>
-  <a href='https://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas/'><span class="map"></span> </a>
-  <a href="https://www.healthline.com/nutrition/food-deserts"><span class="extinfo"></span></a>
   
+<body>
+  <div data-aos="fade-up">
+    <a href="/index.html"> 
+    <img id="home-logo" src="images/logo.jpeg" style="width: 60px;" ></a>
+    <div id="resources-title"><h1 style="position:absolute;"><span class="emoji" style="style: font-size: 70px;" >&#129668</span>Resources</h1></div>
+    
   <div style="text-align: center;">
+  <div id="buttons-container">
+      <a href='https://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas/'><span class="map">
+      </span></a>
+      <a href="https://www.healthline.com/nutrition/food-deserts"><span class="extinfo"></span></a>
+    </div>
       <iframe class=a width="560" height="315" src="https://www.youtube.com/embed/IcZAiawGziM" title="Starved: Our Food Insecurity Crisis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      
       <iframe class=a width="560" height="315" src="https://www.youtube.com/embed/dDbENx9c3Fg" title="Trying to Eat Healthy in a Food Desert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -25,6 +37,10 @@
       <iframe class=a width="560" height="315" src="https://www.youtube.com/embed/Rd8J-9uUnfc" title="Why Grocery Stores Are Avoiding Black Neighborhoods" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class=a width="560" height="315" src="https://www.youtube.com/embed/iEWriN6kh3c" title="TEDxWindyCity -- Mari Gallagher -- Food Deserts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

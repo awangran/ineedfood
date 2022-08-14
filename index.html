@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +18,17 @@
     <nav class="sticky">
       <div>
         <ul>
-          <li><a href="index.html"><span 
-class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a></li>
+          <li><a href="index.html">
+            <span class="hlogo"><img src="images/logo.jpeg" style="width: 30px;" ></span>Home</a></li>
           <li><a href="addRecipes.html"><span class="emoji">&#128213</span>Recipes</a></li>
-          <li><a href="donate.html"><span class="emoji">&#128140</span>Donate</a></li>
           <li><a href="volunteer.html"><span class="emoji">&#9995</span>Volunteer</a></li>
           <li><a href="resources.html"><span class="emoji">&#129668</span>Resources</a></li>
+          <li><a href="donate.html"><span class="emoji">&#128140</span>Donate</a></li>
         </ul>
       </div>
     </nav>
          
-	<header style="background-image: url('https://cdn.ottawamagazine.com/wp-content/uploads/2018/04/fooddesertbanner.jpg'); ">
+	<header style="height: 500px;    background-image: url(https://img.freepik.com/free-vector/desert-forest-landscape-night-scene-with-oasis_1308-57780.jpg?); " data-aos="fade-down">
     
 		<div class="upper-header">
 			<div class="mini-title">issue
@@ -52,7 +53,7 @@ class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a>
     
     
     
-		<div class="lower-header">
+		<div class="lower-header" data-aos="fade-in">
 			<div class="tags-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 					<defs>
@@ -74,8 +75,9 @@ class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a>
 		</div>
 	</header>
  
-         
-  <!-- <div class="section2">
+       
+  <!-- 
+         <div class="section2">
     <a href="/addRecipes.html">
       <span class="recipe"></span></a>
     <a href="/volunteer.html"> 
@@ -83,10 +85,10 @@ class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a>
   </a>
   </div> -->
          
-	<section class="summary">
+	<section class="summary" data-aos="fade-up">
 		<div class="summary-item" id="item-1">
 			<h5 class="item-title">In a Food Desert?</h5>
-			<p class="item-text"><span class="item-data" id="ip">Yes</p>
+			<p class="item-text"><span class="item-data">Yes</p>
 		</div>
 		<div class="summary-item" id="item-2">
 			<h5 class="item-title">Location</h5>
@@ -111,18 +113,18 @@ class="hlogo"><img src="images/logo.jpeg" style="width: 200px;" ></span>Home</a>
 		</div>
 
 	</section>
-  <div class="logo">
+  <div class="logo" data-aos="fade-up">
     <img src="images/logo.jpeg" style="width: 200px;">
   </div>
   <section class="main-article">
-    <div class="article-text-1">
+    <div class="article-text-1" data-aos="slide-up">
 		<h3  id="h3-title" style="display: inline; color: white; font-size: 100px; background: #FBDA8D;">39.5 Million people </h3> <br><h4 style="display: inline; bold: false; color: #C58907;"> in the United States alone live in food deserts. Some may not even realize it. Other people might have extra food they don’t know how to use, or wish to help those who are less fortunate. Food Oasis gives everyone a place to start. </h4>
 		
 		<p>Born out of the desire to help those who struggle to find quality food, Food Oasis' mission is to empower people living within food deserts to learn about options available to them. We also aim to provide volunteer and donation opportunities in order to help levy the burden faced by those living in food deserts. </p>
     </div>
-		<div class="gallery">
+		<div class="gallery" data-aos="fade-in">
       <img src="images/img1.jpg" width="400">
-      <img src="images/img2.jpg" width="400">
+      <img src="images/tWork.jpg" width="400">
       <img src="images/img3.jpg" width="400">
     </div>
 	
@@ -211,5 +213,30 @@ galleryImgs.forEach((item) => {
 
   <script src="map.js"></script>
 </script>
-</html>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+  
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
+});
+  </script>
+  </div>
+</html>

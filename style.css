@@ -31,8 +31,8 @@ iframe.a {
     top: 100px;
     left: 0%;
     float:down;
-    padding-bottom: 30px;
-    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 }
 
 
@@ -364,8 +364,8 @@ iframe.a {
 
 .map{
   position: absolute;
-  top: 90%;
-  left: 65%;
+  top: 10%;
+  left: 60%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -411,8 +411,8 @@ iframe.a {
 
 .extinfo{
   position: absolute;
-  top: 90%;
-  left: 20%;
+  top: 10%;
+  left: 19%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -432,7 +432,7 @@ iframe.a {
 .extinfo:before,
 .extinfo:after{
   position: absolute;
-  content: "More Food Desert Info";
+  content: "Food Desert Info";
   height: 55px;
   width: 180px;
   display: flex;
@@ -457,6 +457,96 @@ iframe.a {
 }
 
 
+/* nav css*/
+nav {
+  z-index: 9;
+  position: sticky;
+  padding: 5px;
+  margin-left: 0%;
+  margin-right: 0%;
+  justify-content: center;
+  margin-top: -10px;
+  float: none;
+  vertical-align: top;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
 
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
 
+li {
+  display: inline-block;
+}
 
+nav li a {
+  padding: 1em;
+  margin: 0px 30px 0px;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: #FBDA90;
+}
+
+a:hover {
+  color: #C58907;
+  transition: 0.3s;
+}
+
+.sticky{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  background: white;
+}
+
+.emoji{
+  font-size: 30px;
+  padding: 10px;
+}
+
+#home-logo{
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+#resources-title{
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+  font-size: 70px;
+}
+
+#resources-title h1{
+  text-align: center;
+}
+
+#buttons-container{
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+#buttons-container a{
+  display: flex;
+  justify-content: center;
+}
+
+.vImage{
+  display: flex;
+  justify-content: center;
+}

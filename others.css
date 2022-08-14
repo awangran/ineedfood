@@ -68,3 +68,30 @@ a:hover {
 #mamamia {
   text-align: center;
 }
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: #FBDA90;
+}
+
+a:hover {
+  color: #C58907;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.donations{
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+#donations-body{
+  display: inline-block;
+  text-align: center;
+  
+}

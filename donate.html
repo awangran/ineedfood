@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donations</title>
+  <title>Donate</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="others.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
 </head>
-<body>
+<body id="donations-body">
+  <nav class="sticky">
+        <div>
+          <ul>
+            <li><a href="index.html">
+              <span class="hlogo"><img src="images/logo.jpeg" style="width: 30px;" ></span>Home</a></li>
+            <li><a href="addRecipes.html"><span class="emoji">&#128213</span>Recipes</a></li>
+            <li><a href="volunteer.html"><span class="emoji">&#9995</span>Volunteer</a></li>
+            <li><a href="resources.html"><span class="emoji">&#129668</span>Resources</a></li>
+            <li><a href="donate.html"><span class="emoji">&#128140</span>Donate</a></li>
+          </ul>
+        </div>
+      </nav>
+  
   <a href="/index.html"> 
     <span class="home"> </span>
   </a>
-  <h1>Thank you for your donation!</h1>
+  <div class="donations" style="text-align:center;">
+    <h1>&#128140 Donate</h1><br>
+    <h1>Nearest Food Bank to you <span style="color:#FBDA8B;">(Houston, Texas):</span></h1>
+    <h2><a href="https://www.houstonfoodbank.org/"> Houston Food Bank </a> </h2>
+    <div class="summary-item" id="item-3">
+			<h5 class="item-title">Map</h5>
+			<p class="item-text"><span class="item-data">
+    <center><div id="map"></div></center>
+    
+      </span></p>
+		</div>
+  </div>
+  
   
 </body>
 </html>
+<script src="map.js"></script>

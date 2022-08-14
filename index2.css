@@ -646,6 +646,9 @@ ul{
 }
 
 .hlogo{
-  transform: scale(0.00003);
   padding: 10px;
+
+  max-height: 3px;
+  max-width: 3px;
+  
 }
