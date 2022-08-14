@@ -95,3 +95,15 @@ a:hover {
   text-align: center;
   
 }
+#map {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  border:0.5px solid green;
+/*   margin: 0;
+  padding: 0; */
+    
+}
+.mapboxgl-canvas{
+  right: 0px;
+}

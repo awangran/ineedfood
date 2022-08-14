@@ -1,4 +1,4 @@
-body {
+
   background: #ffffff;
   display:flex;
   justify-content: center;
@@ -133,8 +133,8 @@ iframe.a {
 
 .volunteer{
   position: absolute;
-  top: 80%;
-  left: 42%;
+  top: 70%;
+  left: 47%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -271,8 +271,8 @@ iframe.a {
 }
 .volunteer{
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 67%;
+  left: 23%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -317,8 +317,8 @@ iframe.a {
 }
 .donate{
   position: absolute;
-  top: 20%;
-  left: 65%;
+  top: 67%;
+  left: 67%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -364,8 +364,8 @@ iframe.a {
 
 .map{
   position: absolute;
-  top: 10%;
-  left: 60%;
+  top: 22%;
+  left: 62%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -411,8 +411,8 @@ iframe.a {
 
 .extinfo{
   position: absolute;
-  top: 10%;
-  left: 19%;
+  top: 22%;
+  left: 20%;
   display: inline-flex;
   width: 180px;
   height: 55px;
@@ -531,7 +531,9 @@ a:hover {
 
 #resources-title h1{
   text-align: center;
+  margin: 20px;
 }
+
 
 #buttons-container{
   text-align: center;
@@ -546,7 +548,31 @@ a:hover {
   justify-content: center;
 }
 
-.vImage{
-  display: flex;
-  justify-content: center;
+
+.volunteerImg{
+    transform: scale(0.8);
+    display: flex;
+    position:absolute;
+    top: 170px;
+    left: 15%;
+    float:left;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+.volunteerImg2{
+    display: flex;
+    position:absolute;
+    top: 170px;
+    left: 60%;
+    float:left;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+}
+
+.sticky{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  background: white;
 }
