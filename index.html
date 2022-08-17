@@ -3,15 +3,21 @@
 <head>
   <link rel="stylesheet" href="index2.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Oasis</title>
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link
       href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <script src="ip.js"></script>
+
 </head>
 <body>
        <article>
@@ -87,15 +93,15 @@
          
 	<section class="summary" data-aos="fade-up">
 		<div class="summary-item" id="item-1">
-			<h5 class="item-title">In a Food Desert?</h5>
-			<p class="item-text"><span class="item-data">Yes</p>
+			<h5 class="item-title">Near a big Food Desert?</h5>
+			<p class="item-text"><span class="item-data" id="nearby"></p>
 		</div>
 		<div class="summary-item" id="item-2">
 			<h5 class="item-title">Location</h5>
-			<p class="item-text"><span class="item-data">Houston, USA</p>
+			<p class="item-text"><span class="item-data" id="question"></p>
 		</div>
 		<div class="summary-item" id="item-3">
-			<h5 class="item-title">Map</h5>
+			<h5 class="item-title"><br>Coords</h5>
 			<p class="item-text"><span class="item-data">
 <!--         <img src="map.png" style="width:400px;height:400*(16/9)px"> -->
 <!--       <form id="options">
@@ -107,12 +113,24 @@
       <button id="resize">Resize</button>
     </form> -->
 <!--     <br/> -->
-    <center><div id="map"></div></center>
+    <center><button onclick="getLocation()" id="button">Get Coords</button><div id="demo">
+    </div></center>
     
       </span></p>
 		</div>
+    
 
 	</section>
+         <div class="hidden">
+         <h1 id="greeting">
+          </h1>
+         <h3 id="question">
+       Peek a Boo! I see you in
+     </h3>
+       <br>
+      <p>Your Public IP Address:</p>
+    <p id="ip">
+      </div>
   <div class="logo" data-aos="fade-up">
     <img src="images/logo.jpeg" style="width: 200px;">
   </div>
@@ -165,7 +183,7 @@
           </ul>
         </div>
       </div>
-      <p>Crafted with ❤️ <a href="https://katy-youth-hacks.devpost.com">KatyYouthHacks Hackathon'22</a></p>
+      <p>Crafted with ❤️ <a href="https://impact-hacks.devpost.com/">Impact Hacks Hackathon'22</a></p>
 
     </div>
   </footer>
@@ -211,7 +229,7 @@ galleryImgs.forEach((item) => {
 </script>
 
 
-  <script src="map.js"></script>
+  <script src="map3.js"></script>
 </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -238,5 +256,26 @@ galleryImgs.forEach((item) => {
 
 });
   </script>
+  <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+</html>
+
   </div>
 </html>

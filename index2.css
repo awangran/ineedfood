@@ -138,6 +138,7 @@ body .summary .summary-item {
 body .summary .summary-item .item-title {
   color: white;
   font-size: 30px;
+  vertical-align: center;
 }
 body .summary .summary-item .item-text {
   margin-top: 30px;
@@ -651,4 +652,26 @@ ul{
   max-height: 3px;
   max-width: 3px;
   
+}
+
+.hidden{
+  display: none;
+}
+
+#button{
+  background-color: white;
+  border: none;
+  color: #C58907;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+#button:hover{
+  background-color: #ffaa00;
+  color: white;
+  transition: 0.3s;
 }
