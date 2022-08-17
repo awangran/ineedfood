@@ -8,10 +8,11 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="others.css">
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>\
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
     <link
@@ -39,8 +40,19 @@
   </a>
   <div class="donations" style="text-align:center;">
     <h1>&#128140 Donate</h1><br>
-    <h1>Nearest Food Bank to you <span style="color:#FBDA8B;">(Houston, Texas):</span></h1>
-    <h2><a href="https://www.houstonfoodbank.org/"> Houston Food Bank </a> </h2>
+    <h1>Nearest Food Bank to you: <span id="question" style="color:#FBDA8B;">:</span></h1>
+    <div class="hidden">
+         <h1 id="greeting">
+          </h1>
+         <h3 id="question">
+       Peek a Boo! I see you in
+     </h3>
+       <br>
+      <p>Your Public IP Address:</p>
+    <p id="ip">
+      </div>
+    <div id="container"><h2 id="donateName"><a id="donateLink" href=""> </a></h2></div>
+  
     <div class="summary-item" id="item-3">
 			<h5 class="item-title">Map</h5>
 			<p class="item-text"><span class="item-data">
@@ -53,5 +65,20 @@
   
   
 <script src="map2.js"></script>
+<script src="ip.js"></script>
+<script>
+  var weather = document.getElementById("question");
+  var name = document.getElementById("donateName");
+  var link = document.getElementById("donateLink");
+
+  if (weather.textContent.includes('CO')) {
+    name.innerHTML = "World Food Programme"
+    link.innerHTML = "https://www.wfp.org/donate-now/"
+
+  } else{
+    name.innerHTML = "World Food Programme"
+    link.innerHTML = "https://www.wfp.org/donate-now/"
+  };
+</script>
 </body>
 </html>

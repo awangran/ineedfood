@@ -107,3 +107,6 @@ a:hover {
 .mapboxgl-canvas{
   right: 0px;
 }
+.hidden{
+  display: none;
+}
